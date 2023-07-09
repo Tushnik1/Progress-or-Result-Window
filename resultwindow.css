@@ -1,0 +1,132 @@
+body{
+    font-family: 'Hanken Grotesk', sans-serif;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    width: 450px;
+    min-height: 250px;
+    box-shadow: 2px 2px 12px black;
+    border-radius: 20px;
+}
+.scoreSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 20px;
+    text-align: center;
+}
+.result{
+    font-weight: 800;
+    color: gainsboro;
+    margin: 15px 0px;
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+h1{
+    margin-bottom: 2px;
+    font-weight: 700;
+    color: white;
+}
+h6{
+    margin-top: 0px;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%);
+}
+.complement{
+    color: gainsboro;
+    font-weight: 700;
+    margin-top: 10px;
+}
+p{
+    font-size: 10px;
+    color: gainsboro;
+    font-weight: 500;
+    width: 60%;
+    margin: 20px auto;
+}
+.Details{
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+.head{
+    padding: 4px;
+    margin: 8px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 15px auto;
+    width: 80%;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.box1{
+    background-color: hsla(0, 100%, 67%,0.2);
+    color: hsl(0, 100%, 67%);
+}
+.box2{
+    background-color: hsla(39, 100%, 56%,0.2);
+    color: hsl(39, 100%, 56%);
+}
+.box3{
+    background-color: hsla(166, 100%, 37%,0.2);
+    color: hsl(166, 100%, 37%);
+}
+.box4{
+    background-color: hsla(234, 85%, 45%,0.2);
+    color: hsl(234, 85%, 45%);
+}
+.button{
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 34px;
+    border: none;
+    height: 25px;
+    width: 80%;
+    margin: auto 20px;
+    padding: 4px;
+}
+.marks{
+    width: 30%;
+    text-align: right;
+    color: rgb(84, 82, 82);
+    font-weight: 700;
+}
+.val{
+    color: black;
+    font-weight: bolder;
+}
+@media (max-width:375px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vmax;
+        box-shadow: none;
+    }
+    .Details{
+        width: 100%;
+}
+    .scoreSide{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
